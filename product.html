@@ -11,9 +11,11 @@
     <nav class="p-2 bg-green-200 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">Greenden</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
+        <div id="hamburger">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+        </div>
           
 
         <ul class="flex gap-5 text-gray-600 hidden md:flex">
@@ -28,48 +30,67 @@
             </li>
         </ul>
     </nav>
+    <div class="relative">
+        
+        <ul id="sidenav" class="flex flex-col items-center fixed -right-72 transition-all duration-800 z-20 bg-gray-300 w-1/4 h-full justify-center top-0 gap-5 text-gray-600 ">
+            <div id="xmark" class="cursor-pointer absolute top-0 right-5">
+                <p>x</p>
+            </div>
+            <li>
+                <a href="index.html" target="_blank" class="hover:underline hover:text-red-600">Home</a>
+            </li>
+            <li>
+                <a href="product.html" target="_blank" class="hover:underline hover:text-red-600">Products</a>
+            </li>
+            <li>
+                <a href="contact.html" target="_blank" class="hover:underline hover:text-red-600">Contacts</a>
+            </li>
+        </ul>
+    </div>
     <section>
-        <h1>Our Products</h1>
-        <input type="text" style="width:80%;">
-        <div class="grid grid-cols-4 gap-5">
+        <div class="grid justify-center py-2 w-full">
+            <h1 class="text-center font-bold">Our Products</h1>
+            <input type="text" id="input" placeholder="search" class="w-96 rounded-full py-1 px-2 border-black border-2">
+        </div>
+        <div id="box" class="grid grid-cols-4 gap-5">
             <div class="text-center">
                 <img src="./images/canva design1.png" class="inline">
-                <p>Rose plant</p>
+                <h1>Rose plant</h1>
                 <p>$20</p>
             </div>
             <div class="text-center">
                 <img src="./images/canva design3.png" class="inline">
-                <p>Rose plant</p>
+                <h1>yellow plant</h1>
                 <p>$20</p>
             </div>
             <div class="text-center">
                 <img src="./images/canva design1.png" class="inline">
-                <p>Rose plant</p>
+                <h1>green plant</h1>
                 <p>$20</p>
             </div>
             <div class="text-center">
                 <img src="./images/canva design2.png" class="inline">
-                <p>Rose plant</p>
+                <h1>red plant</h1>
                 <p>$20</p>
             </div>
             <div class="text-center">
                 <img src="./images/canva design4.png" class="inline">
-                <p>Rose plant</p>
+                <h1>purple plant</h1>
                 <p>$20</p>
             </div>
             <div class="text-center">
                 <img src="./images/canva design2.png" class="inline">
-                <p>Rose plant</p>
+                <h1>white plant</h1>
                 <p>$20</p>
             </div>
             <div class="text-center">
                 <img src="./images/canva design2.png" class="inline">
-                <p>Rose plant</p>
+                <h1>vue plant</h1>
                 <p>$20</p>
             </div>
             <div class="text-center">
                 <img src="./images/canva design1.png" class="inline">
-                <p>Rose plant</p>
+                <h1>migrant plant</h1>
                 <p>$20</p>
             </div>
         </div>
@@ -79,5 +100,7 @@
         <p class="mt-2">The standard chunk of lorem ipsum used 1500 is reprodused below for those interest</p>
         <p class="mt-2">&copy;2023 greenden.com</p>
     </footer>
+    <script src="product.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
